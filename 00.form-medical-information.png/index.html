@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<title>00.form-medical-information</title>
+</head>
+<body>
+	<div class="header">
+		<h3>Emergency Contact and Medical Information</h3>
+	</div>
+	<h5>Name</h5>
+	<div class="name">
+		<div class="first">
+			<input type="text" rows="1" size="10" maxlength="20">
+			<h6>First</h6>
+		</div>
+		<div class="last">
+			<input type="text" rows="1" size="20" maxlength="20">
+			<h6>Last</h6>
+		</div>
+	</div>
+	<div class="nom">
+		<h5>Gender</h5>
+		<h5>Date of Birth</h5>
+	</div>
+	<div class="date">
+		<div class="gender" style="width:50%">
+			<div class="container">         
+				<div class="form-group">
+					<div class="col-sm-2">
+						<select class="form-control" id="gender1">
+							<option>Male</option>
+							<option>Female</option>
+						</select>           
+					</div>
+				</div> 
+			</div>         
+		</div>
+		<div class="birth">
+			<div class="container">
+				<div class="row">
+					<div class='col-sm-6'>
+						<div class="form-group">
+							<div class='input-group date' id='datetimepicker1'>
+								<input type='text' class="form-control" />
+								<span class="input-group-addon">
+									<span class="glyphicon glyphicon-calendar"></span>
+								</span>
+							</div>
+						</div>
+					</div>
+					<script type="text/javascript">
+						$(function () {
+							$('#datetimepicker1').datetimepicker();
+						});
+					</script>
+				</div>
+			</div>
+			<div class="mdy">
+				<!-- <input type="date" rows="1" size="20"> -->
+				<h6>MM / DD / YYYY</h6>
+				<!-- <p>/</p> -->
+				<!-- 	<input type="date" name="" id=""> -->
+				<!-- <h6>DD</h6>
+					<p>/</p> -->
+					<!-- 	<input type="date" name="" id=""> -->
+					<!-- <h6>YYYY</h6> -->
+				</div>
+			</div>
+		</div>
+		<div class="emergency">
+			<h2>Emergency Contact</h2>
+			<div class="nom">
+				<h5>Name</h5>
+				<h5>Relationship</h5>
+			</div>
+			<div class="name">
+				<div class="first">
+					<input type="text" rows="1" size="10" maxlength="20">
+					<h6>First</h6>
+				</div>
+				<div class="last">
+					<input type="text" rows="1" size="20" maxlength="20">
+					<h6>Last</h6>
+				</div>
+				<div class="relation">
+					<input type="text">
+				</div>
+			</div>
+			<div class="address">
+				<h5>Address</h5>
+				<input type="text" rows="1" size="150" maxlength="150">
+				<h6>Street Address</h6>
+				<input type="text" rows="1" size="150" maxlength="150">
+				<h6>Address Line 2</h6>
+			</div>
+			<div class="city-state">
+				<div class="city">
+					<input type="text" rows="1" size="75" maxlength="75">
+					<h6>City</h6>
+				</div>
+				<div class="state">
+					<input type="text" rows="1" size="75" maxlength="75">
+					<h6>State  / Province / Region</h6>
+				</div>
+			</div>
+			<div class="postal-country">
+				<div class="postal">
+					<input type="text" rows="1" size="75" maxlength="75">
+					<h6>Postal / Zip Code</h6>
+				</div>
+				<div class="country">
+					<select name="Country">
+						<option value="france">France</option>
+						<option value="belgique">Belgique</option>
+						<option value="canada">Canada</option>
+						<option value="maroc">Maroc</option>
+						<option value="tunisie">Tunisie</option>
+						<option value="algerie">Algerie</option>
+						<option value="togo">Togo</option>
+						<option value="rwanda">Rwanda</option>
+					</select>
+					<h6>Country</h6>
+				</div>
+			</div>
+		</div>
+		<div class="nom">
+			<h5>Home Phone</h5>
+			<h5>Work Phone</h5>
+		</div>
+		<div class="phone">
+			<div class="home">
+				<input type="text" rows="1" size="1" maxlength="2">
+				<p>###</p>
+			</div>
+			<h6> - </h6>
+			<div class="home">
+				<input type="text" rows="1" size="1" maxlength="2">
+				<p>###</p>
+			</div>
+			<h6> - </h6>
+			<div class="home">
+				<input type="text" rows="1" size="1" maxlength="2">
+				<p>####</p>
+			</div>
+			<div class="work">
+				<input type="text" rows="1" size="1" maxlength="2">
+				<p>###</p>
+			</div>
+			<h6> - </h6>
+			<div class="work">
+				<input type="text" rows="1" size="1" maxlength="2">
+				<p>###</p>
+			</div>
+			<h6> - </h6>
+			<div class="work">
+				<input type="text" rows="1" size="1" maxlength="2">
+				<p>####</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="medical">
+	<h2>Medical Information</h2>
+	<h5>Hospital / Clininc Preference</h5>
+	<input type="text">
+	<div class="insurance">
+		<h5>Insurance Company</h5>
+		<input type="text">
+		<h5>Policy Number</h5>
+		<input type="text">
+	</div>
+	<div class="physician">
+		<h5>Physician's Name</h5>
+		<input type="text">
+		<h5>Phone Number</h5>
+		<div class="work">
+			<input type="text" rows="1" size="1" maxlength="2">
+			<p>###</p>
+		</div>
+		<h6> - </h6>
+		<div class="work">
+			<input type="text" rows="1" size="1" maxlength="2">
+			<p>###</p>
+		</div>
+		<h6> - </h6>
+		<div class="work">
+			<input type="text" rows="1" size="1" maxlength="2">
+			<p>####</p>
+		</div>
+	</div>
+	<h5>Allergies / Special Health Considerations</h5>	
+	<textarea cols="150" rows="5"></textarea>
+	<br/>
+	<input type="Submit" value="Submit">
+</div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<input type="hidden" name="">
+<input type="search" name="" id="">
+<input type="email" name="" id="">
+<input type="password" name="" id="">
+<input type="datetime" name="" id="">
+<input type="date" name="" id="">
+<input type="datetime-local" name="" id="">
+<input type="month" name="" id="">
+<input type="week" name="" id="">
+<input type="time" name="" id="">
+<input type="tel" name="" id="">
+<input type="number" name="" id="">
+<input type="color" name="" id="">
+<input type="checkbox" name="" id="">
+<input type="radio" name="" id="">
+<input type="file" name="" id="">
+<input type="submit" value="">
+<input type="radio" name="" id="">
+<input type="file" name="" id="">
+<input type="submit" value="">
+<input type="image" src="" alt="">
+<input type="button" value="">
+<input type="reset" value="">
+<select name="" id=""></select>
+<isindex>
+
+</body>
+</html>

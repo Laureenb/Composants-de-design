@@ -1,0 +1,33 @@
+.container {
+  background-color: #E5E5E5;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+button {
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: row;
+  margin: 28px -20px 28px 25px;
+  padding: 11px 33px 11px 32px;
+  background-color: #3C444E;
+  color: white;
+  font-font-family: 'Libre Franklin', sans-serif;
+  font-font-size: 14px;
+  font-font-weight: 300;
+  font-border: none;
+  font-font-weight: bolder;
+}
+button:nth-child(7) {
+  background-color: #3AA1E7;
+}
+button:nth-child(1) button:nth-child(5) {
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,53 @@
+.header {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-decoration: underline lightgrey;
+}
+
+.name {
+	display: flex;
+	flex-direction: row;
+}
+
+.last {
+	padding-left: 10px;
+}
+
+.date {
+	display: flex;
+	flex-direction: row;
+}
+
+.nom {
+	display: flex;
+	flex-direction: row;
+}
+
+.nom: nth-child(2){
+	padding-left: 100px;
+}
+
+.city-state {
+	display: flex;
+	flex-direction: row;
+}
+
+.postal-country {
+	display: flex;
+	flex-direction: row;
+}
+
+.phone {
+	display: flex;
+	flex-direction: row;
+}
+
+.insurance {
+	display: flex;
+	flex-direction: row;
+}
+
+.physician {
+	display: flex;
+	flex-direction: row;
+}

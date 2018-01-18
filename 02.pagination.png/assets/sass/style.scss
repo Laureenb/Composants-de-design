@@ -1,0 +1,42 @@
+$dark_blue: #3C444E;
+$width: 60%;
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-o-border-radius: $radius;
+	border-radius: $radius;
+}
+
+.container {
+	background-color: #E5E5E5;
+	width: $width;
+	margin-left: auto;
+  	margin-right: auto;
+	display: flex;
+}
+
+button {
+	@include border-radius (7px);
+	display: flex;
+    flex-direction: row;
+    margin: 28px -20px 28px 25px;
+    padding: 11px 33px 11px 32px;
+    background-color: $dark_blue;
+    color: white;
+    font: {
+	    font-family: 'Libre Franklin', sans-serif;
+	    font-size: 14px;
+	    font-weight: 300;
+	    border: none;
+	    font-weight: bolder;
+	}	
+
+	&:nth-child(7) {
+		background-color: #3AA1E7; 
+	}
+
+	&:nth-child(1) &:nth-child(5) {
+		color: black; 
+	}
+}
