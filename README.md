@@ -1,4 +1,4 @@
-# Composants-de-design
+# Composants-de-design (projet en cours)
 
 ## Objectifs d'apprentissage
 
