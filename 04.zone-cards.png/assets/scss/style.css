@@ -1,0 +1,43 @@
+.outline-mode * {
+  outline: 1px solid #000;
+}
+
+.main .expe {
+  color: #484848;
+  font-weight: bolder;
+}
+.main .plus {
+  display: inline;
+  color: #a5a5a5;
+  margin-left: 79%;
+  margin-bottom: 2%;
+}
+.main .plus p {
+  display: inline;
+}
+.main .plus img {
+  display: inline;
+}
+.main p {
+  font-size: 14px;
+  color: #a5a5a5;
+}
+.main strong {
+  color: #484848;
+}
+.main .etoiles {
+  display: inline;
+}
+.main .etoiles img {
+  display: inline;
+}
+.main .etoiles p {
+  display: inline;
+  font-size: 10px;
+  color: #484848;
+}
+.main .next {
+  margin-top: 10%;
+}
+
+/*# sourceMappingURL=style.css.map */
